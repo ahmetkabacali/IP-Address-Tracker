@@ -1,0 +1,49 @@
+@media(max-width:1050px) {
+    html {
+        font-size: 9px;
+   }
+    .details {
+        width: 90%;
+   }
+}
+@media(max-width:850px) {
+    .details {
+        width: 100%;
+   }
+}
+@media(max-width:750px) {
+    html {
+        font-size: 8px;
+   }
+}
+@media(max-width:650px) {
+    html {
+        font-size: 9px;
+   }
+    header {
+        justify-content: start;
+        height: 35vh;
+        padding: 3rem;
+   }
+    .page-heading {
+        font-size: 2.8rem;
+   }
+    .input-box{
+        width: 100%;
+   }
+    .details {
+        flex-wrap: wrap;
+        padding: 1rem;
+   }
+    .details-item {
+        font-size: 2rem;
+        width: 50%;
+        margin-bottom: 1rem;
+   }
+    .details-heading {
+        margin-bottom: 0.3rem;
+   }
+    .border-seperator {
+        display: none;
+   }
+}

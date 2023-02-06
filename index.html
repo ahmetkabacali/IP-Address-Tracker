@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./src/img/">
+  <link rel="stylesheet" href="./src/css/style.css">
+  <link rel="stylesheet" href="./src/css/media.css">
+
+  <script src="https://cdn.maptiler.com/maplibre-gl-js/v2.4.0/maplibre-gl.js"></script>
+  <link href="https://cdn.maptiler.com/maplibre-gl-js/v2.4.0/maplibre-gl.css" rel="stylesheet" />
+  <title>Frontend Mentor | IP Address Tracker</title>
+</head>
+
+<body>
+  <div class="page-wrapper">
+    <header>
+      <h1 class="page-heading">IP Address Tracker</h1>
+      <div class="input-box">
+        <input class="input-item input-text" type="text" placeholder="Search for any IP adress or domain" name="search">
+        <button class="input-item input-btn" type="submit"><img src="./src/img/icon-arrow.svg" alt="" aria-label="hidden"></i></button>
+      </div>
+      <div class="details">
+        <div class="details-item entered-ip">
+          <div class="details-heading">IP ADDRESS</div>
+          <div class="details-desc">192.212.174.101</div>
+        </div>
+        <div class="border-seperator"></div>
+        <div class="details-item entered-ip">
+          <div class="details-heading">LOCATION</div>
+          <div class="details-desc">Brooklyn, NY <span class="postal-code">10001</span></div>
+        </div>
+        <div class="border-seperator"></div>
+        <div class="details-item entered-ip">
+          <div class="details-heading">TIMEZONE</div>
+          <div class="details-desc">UTC-05:00</div>
+        </div>
+        <div class="border-seperator"></div>
+        <div class="details-item entered-ip">
+          <div class="details-heading">ISP</div>
+          <div class="details-desc">Spacex Starlink</div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div id="map"></div>
+    </main>
+  </div>
+</body>
+
+<script src="./src/js/script.js"></script>
+</html>
