@@ -11,13 +11,13 @@ inputBtn.addEventListener("click", () => {
 })
 
 function searchIP(enteredIP) {
-    fetch(`https://api.ipgeolocation.io/ipgeo?apiKey=6ceb4f9b56924867806657fd437ced6e&ip=${enteredIP}`,{ mode: "no-cors" }).then(res => res.json())
-        .then((data) => {
-            console.log(data)
-            displayMap(data.longitude, data.latitude)
-            dataList = [data.ip, data.city, `UTC ${data.time_zone.offset}:00`, data.isp.split(" ")[0]]
-            displayDetailRender(dataList)
-        })
+        fetch(`https://cors-anywhere.herokuapp.com/https://api.ipgeolocation.io/ipgeo?apiKey=6ceb4f9b56924867806657fd437ced6e&ip=${enteredIP}`).then(res => res.json())
+            .then((data) => {
+                console.log(data)
+                displayMap(data.longitude, data.latitude)
+                dataList = [data.ip, data.city, `UTC ${data.time_zone.offset}:00`, data.isp.split(" ")[0]]
+                displayDetailRender(dataList)
+            })
 
 }
 function displayDetailRender(dataList) {
