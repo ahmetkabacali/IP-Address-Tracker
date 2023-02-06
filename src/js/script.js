@@ -11,7 +11,7 @@ inputBtn.addEventListener("click", () => {
 })
 
 function searchIP(enteredIP) {
-    fetch(`https://api.ipgeolocation.io/ipgeo?apiKey=6ceb4f9b56924867806657fd437ced6e&ip=${enteredIP}`).then(res => res.json())
+    fetch(`https://api.ipgeolocation.io/ipgeo?apiKey=6ceb4f9b56924867806657fd437ced6e&ip=${enteredIP}`,{ mode: "no-cors" }).then(res => res.json())
         .then((data) => {
             console.log(data)
             displayMap(data.longitude, data.latitude)
