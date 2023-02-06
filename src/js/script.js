@@ -29,11 +29,10 @@ function displayDetailRender(dataList) {
     });
 
 }
-function displayMap(lon, lat) {
-    const apikey = 'NUM6lvvkg7XBwD5YnmuO';
+function displayMap(lon, lat) {    
     const map = new maplibregl.Map({
         container: 'map', // container's id or the HTML element in which MapLibre GL JS will render the map
-        style: `https://api.maptiler.com/maps/streets-v2/style.json?key=${apikey}`, // style URL
+        style: `https://api.maptiler.com/maps/streets-v2/style.json?key=NUM6lvvkg7XBwD5YnmuO`, // style URL
         center: [lon, lat], // starting position [lng, lat]
         zoom: 12, // starting zoom
     });
