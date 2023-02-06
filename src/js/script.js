@@ -35,7 +35,7 @@ function displayMap(lon, lat) {
         container: 'map', // container's id or the HTML element in which MapLibre GL JS will render the map
         style: `https://api.maptiler.com/maps/streets-v2/style.json?key=${apikey}`, // style URL
         center: [lon, lat], // starting position [lng, lat]
-        zoom: 15, // starting zoom
+        zoom: 12, // starting zoom
     });
     const marker = new maplibregl.Marker()
         .setLngLat([lon, lat])
